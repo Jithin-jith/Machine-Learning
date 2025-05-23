@@ -59,3 +59,5 @@ print(f"Prediction of the 12th image : {np.argmax(prediction[12])}")
 plt.imshow(test_images[12].reshape(28,28),cmap="gray")
 plt.title(f"predicted label : {np.argmax(prediction[12])}")
 plt.show()
+
+model.save("img_classifier.keras")
